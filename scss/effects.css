@@ -1,0 +1,15 @@
+.hover:hover {
+  color: black;
+}
+
+.hover::after {
+  content: "";
+  width: 0px;
+  transition: 0.4s;
+  display: block;
+}
+
+.hover:hover::after {
+  width: 100%;
+  border: solid 1px black;
+}
